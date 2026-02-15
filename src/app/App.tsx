@@ -37,6 +37,8 @@ import screenshot1Img from '../assets/img/screenshot1.png';
 import screenshot2Img from '../assets/img/screenshot2.png';
 import screenshot3Img from '../assets/img/screenshot3.png';
 import studentsImg from '../assets/img/students.png';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Navigation } from './components/Navigation';
 import { FlipCard } from './components/FlipCard';
 import { StatCard } from './components/AnimatedComponents';

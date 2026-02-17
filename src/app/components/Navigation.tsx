@@ -67,8 +67,6 @@ export function Navigation() {
             ))}
             <a
               href="https://bclproduction-tech.github.io/Beduni_Company_Limited/"
-              target="_blank"
-              rel="noopener noreferrer"
               className="px-5 py-2 bg-gradient-to-r from-[#8B1538] to-[#C1164A] text-white rounded-full hover:shadow-lg hover:shadow-maroon-500/50 transition-all duration-300 text-sm"
             >
               Back to BCL
@@ -112,8 +110,6 @@ export function Navigation() {
               ))}
               <a
                 href="https://bclproduction-tech.github.io/Beduni_Company_Limited/"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block w-full px-5 py-3 bg-gradient-to-r from-[#4a90e2] to-[#6ba3e8] text-white rounded-full text-center hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
               >
                 Back to BCL

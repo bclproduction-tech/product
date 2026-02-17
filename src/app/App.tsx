@@ -942,8 +942,6 @@ export default function App() {
                 <li>
                   <a
                     href="https://bclproduction-tech.github.io/Beduni_Company_Limited/"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     BCL Website

@@ -252,9 +252,7 @@ export default function App() {
             >
               <motion.div
                 className="inline-block"
-                animate={{ rotate: [0, 5, 0, -5, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              >
+                >
                 <div className="bg-gradient-to-r from-[#8B1538]/20 to-[#4a90e2]/20 backdrop-blur-lg border border-white/20 rounded-full px-6 py-2 inline-flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-[#C1164A] to-[#4a90e2] animate-pulse" />
                   <span className="text-sm text-gray-300">CBC-Aligned • Offline-First • Privacy-Focused</span>
@@ -732,7 +730,7 @@ export default function App() {
               <div className="flex flex-col gap-3 max-w-md mx-auto">
                 <div className="flex items-center gap-3 text-gray-300">
                   <CheckCircle className="w-5 h-5 text-[#4a90e2]" />
-                  <span>Windows & MacOS compatible</span>
+                  <span>Windows compatible</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300">
                   <CheckCircle className="w-5 h-5 text-[#4a90e2]" />
@@ -897,7 +895,7 @@ export default function App() {
                 </span>
               </div>
               <p className="text-gray-400 max-w-md mb-6">
-                Ai mathematics software designed for the Kenyan education system.
+                Intergrated AI mathematics software designed for the Kenyan education system.
                 Empowering students and teachers with CBC-aligned, offline-first learning
                 tools.
               </p>
@@ -943,7 +941,7 @@ export default function App() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://bcl.co.ke"
+                    href="https://bclproduction-tech.github.io/Beduni_Company_Limited/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
@@ -952,18 +950,8 @@ export default function App() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <a href="#hero" className="text-gray-400 hover:text-white transition-colors">
                     About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    Support
                   </a>
                 </li>
               </ul>
@@ -975,10 +963,10 @@ export default function App() {
               © 2026 Hesabu Safi by BCL. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://bclproduction-tech.github.io/Beduni_Company_Limited/legal/privacy-policy.html" className="hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://bclproduction-tech.github.io/Beduni_Company_Limited/legal/terms-of-service.html" className="hover:text-white transition-colors">
                 Terms of Service
               </a>
             </div>

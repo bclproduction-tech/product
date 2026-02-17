@@ -19,24 +19,28 @@ export function FlipCard({ image, title, description, isActive, onClick }: FlipC
 
   return (
     <motion.div
-      className="relative min-w-[300px] h-[400px] cursor-pointer perspective-1000"
+      className="relative min-w-[300px] h-[400px] cursor-pointer"
+      style={{ perspective: '1000px' }}
       onClick={handleClick}
       whileHover={{ scale: isActive ? 1.05 : 1.02 }}
       animate={{
         scale: isActive ? 1.05 : 1,
-        filter: isActive ? 'blur(0px)' : 'blur(0px)',
       }}
       transition={{ duration: 0.3 }}
     >
       <motion.div
-        className="relative w-full h-full transition-transform duration-700 transform-style-3d"
+        className="relative w-full h-full rounded-3xl"
+        style={{
+          transformStyle: 'preserve-3d',
+          willChange: 'transform',
+        }}
         animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}
       >
         {/* Front of card */}
         <div
-          className="absolute inset-0 backface-hidden rounded-3xl overflow-hidden"
-          style={{ backfaceVisibility: 'hidden' }}
+          className="absolute inset-0 rounded-3xl overflow-hidden"
+          style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}
         >
           <div className="relative w-full h-full bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg border border-white/20 rounded-3xl overflow-hidden group">
             <img
@@ -59,8 +63,12 @@ export function FlipCard({ image, title, description, isActive, onClick }: FlipC
 
         {/* Back of card */}
         <div
-          className="absolute inset-0 backface-hidden rounded-3xl overflow-hidden"
-          style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+          className="absolute inset-0 rounded-3xl overflow-hidden"
+          style={{
+            backfaceVisibility: 'hidden',
+            WebkitBackfaceVisibility: 'hidden',
+            transform: 'rotateY(180deg)',
+          }}
         >
           <div className="w-full h-full bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] backdrop-blur-lg border border-white/20 rounded-3xl p-8 flex flex-col justify-center items-center">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-[#f4e5c2] to-[#d4af37] bg-clip-text text-transparent mb-6">
